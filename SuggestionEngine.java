@@ -20,6 +20,7 @@ public class SuggestionEngine extends Java8BaseListener {
 	class Candidate implements Comparable<Candidate> {
 		String methodName;
 		double distance;
+
 		public Candidate(String methodName, double distance) {
 			this.methodName = methodName;
 			this.distance = distance;
@@ -36,8 +37,8 @@ public class SuggestionEngine extends Java8BaseListener {
 		@Override
 		public boolean equals(Object o) {
 			if (o instanceof Candidate) {
-				return ((Candidate)o).methodName.equals(
-					this.methodName);
+				return ((Candidate) o).methodName.equals(
+						this.methodName);
 			}
 			return super.equals(o);
 		}
@@ -46,6 +47,12 @@ public class SuggestionEngine extends Java8BaseListener {
 		public int hashCode() {
 			return methodName.hashCode();
 		}
+
+		@Override
+		public String toString() {
+			return this.methodName + ": " + this.distance;
+		}
+
 	}
 
 	private final static Logger LOGGER = Logger.getLogger(SuggestionEngine.class.getName());
@@ -69,9 +76,9 @@ public class SuggestionEngine extends Java8BaseListener {
 	List<String> mMethods;
 
 	public TreeSet<Candidate> suggest(InputStream code,
-					  String word,
-					  int topK)
-	throws IOException {
+			String word,
+			int topK)
+			throws IOException {
 		ANTLRInputStream input = new ANTLRInputStream(System.in);
 		Java8Lexer lexer = new Java8Lexer(input);
 		CommonTokenStream tokens = new CommonTokenStream(lexer);
@@ -80,10 +87,9 @@ public class SuggestionEngine extends Java8BaseListener {
 		long start = System.nanoTime();
 		ParseTree tree = parser.compilationUnit();
 		long elapsedNano = System.nanoTime() - start;
-		long elapsedSec =
-			TimeUnit.SECONDS.convert(elapsedNano, TimeUnit.NANOSECONDS);
+		long elapsedSec = TimeUnit.SECONDS.convert(elapsedNano, TimeUnit.NANOSECONDS);
 		LOGGER.info(String.format(
-			"Built the parse tree...(took %d seconds)", elapsedSec));
+				"Built the parse tree...(took %d seconds)", elapsedSec));
 		ParseTreeWalker walker = new ParseTreeWalker();
 		mMethods = new ArrayList<>();
 
@@ -98,37 +104,85 @@ public class SuggestionEngine extends Java8BaseListener {
 
 	@Override
 	public void enterMethodDeclaration(
-		Java8Parser.MethodDeclarationContext ctx) {
+			Java8Parser.MethodDeclarationContext ctx) {
 		// Access methodModifier and examine all modifiers to see if there is "public".
-		// If the method is public, then get the method name from the methodDeclarator's Identifier.
+		// If the method is public, then get the method name from the methodDeclarator's
+		// Identifier.
 		// Add the method name to mMethods variable.
 
-		String modifier = ctx.methodModifier().get(0).getText();
-		
-		//İlk ödevdekinin aksine mantıklı bir şekilde aldım
+		String modifier;
+		List<Java8Parser.MethodModifierContext> modifiers = ctx.methodModifier();
+		if(modifiers.size() == 0){
+			modifier = "";
+		}
+		else{
+			modifier = modifiers.get(0).getText();
+		}
+
+		// İlk ödevdekinin aksine mantıklı bir şekilde aldım
 		String methodName = ctx.methodHeader().methodDeclarator().Identifier().getText();
-		
-		if(modifier.equals("public")){
+
+		if (modifier.equals("public")) {
 			mMethods.add(methodName);
 		}
 	}
 
 	private TreeSet<Candidate> getTopKNeighbor(String word, int K) {
 		TreeSet<Candidate> minHeap = new TreeSet<>();
-		// - Go through all methods in mMethods and compute the distance of the method name to the word.
+		// - Go through all methods in mMethods and compute the distance of the method
+		// name to the word.
 		// - Use
-		//   double distance = Levenshtein.distance(word, methodName);
+		// double distance = Levenshtein.distance(word, methodName);
 		// to compute the distance.
 		// - Use the minHeap to keep track of K methods with the least distance.
 		// - Make sure that there is at least K elements in the heap.
 		// - You can use
-		//	LOGGER.info("my message")
+		// LOGGER.info("my message")
 		// to add your log lines for debugging.
-
-		System.out.println("Public method names");
-		for (String string : mMethods) {
-			System.out.println(string);
+		double distance = 0;
+		for (String methodName : mMethods) {
+			distance = Levenshtein.distance(word, methodName);
+			minHeap.add(new Candidate(methodName, distance));
 		}
-		return minHeap;
+		printPublicMethodNames(mMethods);
+		printHeap(minHeap);
+
+		TreeSet<Candidate> returnSet = new TreeSet<>();
+		if (mMethods.size() < K) {
+			// System.out.println("There is no " + K + " methods in your test file.");
+			// System.out.println("But I can show you the first " + mMethods.size() + "
+			// methods.");
+
+			for (int i = 0; i < mMethods.size(); i++) {
+				returnSet.add(minHeap.pollFirst());
+				// System.out.println(minHeap.pollFirst());
+			}
+		} else {
+			for (int i = 0; i < K; i++) {
+				returnSet.add(minHeap.pollFirst());
+				// System.out.println(minHeap.pollFirst());
+			}
+		}
+
+		return returnSet;
+	}
+
+	public void printHeap(TreeSet<Candidate> minHeap){
+		System.out.println("******************************");
+		System.out.println("PRINTING HEAP");
+		for (Candidate candidate : minHeap) {
+			System.out.println(candidate);
+		}
+		System.out.println("******************************");
+
+	}
+	public void printPublicMethodNames(List<String> mMethods){
+		System.out.println("******************************");
+		System.out.println("PRINTING PUBLIC METHOD NAMES");
+		for (String method : mMethods) {
+			System.out.println(method);
+		}
+		System.out.println("******************************");
+
 	}
 }
