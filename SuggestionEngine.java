@@ -102,6 +102,15 @@ public class SuggestionEngine extends Java8BaseListener {
 		// Access methodModifier and examine all modifiers to see if there is "public".
 		// If the method is public, then get the method name from the methodDeclarator's Identifier.
 		// Add the method name to mMethods variable.
+
+		String modifier = ctx.methodModifier().get(0).getText();
+		
+		//İlk ödevdekinin aksine mantıklı bir şekilde aldım
+		String methodName = ctx.methodHeader().methodDeclarator().Identifier().getText();
+		
+		if(modifier.equals("public")){
+			mMethods.add(methodName);
+		}
 	}
 
 	private TreeSet<Candidate> getTopKNeighbor(String word, int K) {
@@ -115,6 +124,11 @@ public class SuggestionEngine extends Java8BaseListener {
 		// - You can use
 		//	LOGGER.info("my message")
 		// to add your log lines for debugging.
+
+		System.out.println("Public method names");
+		for (String string : mMethods) {
+			System.out.println(string);
+		}
 		return minHeap;
 	}
 }
