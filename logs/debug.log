@@ -1,234 +1,70 @@
-Dec 18, 2022 3:44:31 PM SuggestionEngine main
+Dec 18, 2022 3:50:43 PM SuggestionEngine main
 INFO: Info Log
-Dec 18, 2022 3:44:31 PM SuggestionEngine suggest
+Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
 INFO: Building the parse tree...
-Dec 18, 2022 3:44:37 PM SuggestionEngine suggest
-INFO: Built the parse tree...(took 5 seconds)
-Dec 18, 2022 3:44:37 PM SuggestionEngine suggest
+Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
+INFO: Built the parse tree...(took 0 seconds)
+Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
 INFO: Collecting the public method names...
-Dec 18, 2022 3:44:37 PM SuggestionEngine suggest
+Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
 INFO: Collected the public method names...
-Dec 18, 2022 3:44:37 PM SuggestionEngine suggest
-INFO: [length, isEmpty, charAt, codePointAt, codePointBefore, codePointCount, offsetByCodePoints, getChars, getBytes, getBytes, getBytes, equals, contentEquals, contentEquals, equalsIgnoreCase, compareTo, compare, compareToIgnoreCase, regionMatches, regionMatches, startsWith, startsWith, endsWith, hashCode, indexOf, indexOf, lastIndexOf, lastIndexOf, indexOf, indexOf, lastIndexOf, lastIndexOf, substring, substring, subSequence, concat, replace, matches, contains, replaceFirst, replaceAll, replace, split, split, toLowerCase, toLowerCase, toUpperCase, toUpperCase, trim, toString, toCharArray, format, format, valueOf, valueOf, valueOf, copyValueOf, copyValueOf, valueOf, valueOf, valueOf, valueOf, valueOf, valueOf, intern]
-Dec 18, 2022 3:44:37 PM SuggestionEngine suggest
+Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
+INFO: [test1, test2, test3, test4, abbbbbbbbbbbbba, aba, abbbba, getData, getFullData, getFullData2, gtfdat2]
+Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
 INFO: Finding the suggestions...
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
 INFO: ******************************
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: PRINTING PUBLIC METHOD NAMES
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: length
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: isEmpty
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: charAt
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: codePointAt
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: codePointBefore
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: codePointCount
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: offsetByCodePoints
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: getChars
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: getBytes
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: getBytes
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: getBytes
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: equals
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: contentEquals
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: contentEquals
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: equalsIgnoreCase
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: compareTo
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: compare
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: compareToIgnoreCase
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: regionMatches
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: regionMatches
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: startsWith
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: startsWith
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: endsWith
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: hashCode
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: indexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: indexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: lastIndexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: lastIndexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: indexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: indexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: lastIndexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: lastIndexOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: substring
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: substring
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: subSequence
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: concat
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: replace
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: matches
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: contains
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: replaceFirst
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: replaceAll
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: replace
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: split
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: split
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: toLowerCase
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: toLowerCase
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: toUpperCase
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: toUpperCase
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: trim
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: toString
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: toCharArray
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: format
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: format
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: copyValueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: copyValueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: valueOf
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
-INFO: intern
-Dec 18, 2022 3:44:37 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: LOGGING PUBLIC METHOD NAMES
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: test1
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: test2
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: test3
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: test4
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: abbbbbbbbbbbbba
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: aba
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: abbbba
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: getData
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: getFullData
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: getFullData2
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+INFO: gtfdat2
+Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
 INFO: ******************************
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
 INFO: ******************************
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: PRINTING HEAP
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: toUpperCase: 4.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: compare: 5.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: isEmpty: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: compareTo: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: concat: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: matches: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: split: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: trim: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: toString: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: format: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: intern: 6.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: length: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: charAt: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: getChars: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: getBytes: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: equals: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: indexOf: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: replace: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: contains: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: toLowerCase: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: valueOf: 7.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: endsWith: 8.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: hashCode: 8.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: toCharArray: 8.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: startsWith: 9.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: substring: 9.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: replaceAll: 9.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: copyValueOf: 9.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: codePointAt: 10.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: lastIndexOf: 10.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: subSequence: 10.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: replaceFirst: 10.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: regionMatches: 11.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: codePointBefore: 12.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: contentEquals: 12.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: codePointCount: 13.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: equalsIgnoreCase: 15.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: compareToIgnoreCase: 15.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
-INFO: offsetByCodePoints: 16.0
-Dec 18, 2022 3:44:37 PM SuggestionEngine logHeap
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: LOGGING HEAP
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: getData: 0.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: getFullData: 4.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: gtfdat2: 4.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: test1: 5.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: test2: 5.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: test3: 5.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: test4: 5.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: aba: 5.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: getFullData2: 5.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: abbbba: 6.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+INFO: abbbbbbbbbbbbba: 14.0
+Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
 INFO: ******************************

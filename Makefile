@@ -10,5 +10,36 @@ run2: clean
 	cat input/String.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine toUpper 3
 
 
+run3: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine test 3
+
+run4: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine test 4
+
+run5: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine test 5
+
+run6: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine get 3
+
+run7: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine data 3
+
+run8: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine getData 3
+
+
 clean:
 	rm -f *.class
