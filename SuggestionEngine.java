@@ -144,8 +144,9 @@ public class SuggestionEngine extends Java8BaseListener {
 			distance = Levenshtein.distance(word, methodName);
 			minHeap.add(new Candidate(methodName, distance));
 		}
-		printPublicMethodNames(mMethods);
-		printHeap(minHeap);
+		
+		logPublicMethodNames(mMethods);
+		logHeap(minHeap);
 
 		TreeSet<Candidate> returnSet = new TreeSet<>();
 		if (mMethods.size() < K) {
@@ -167,22 +168,23 @@ public class SuggestionEngine extends Java8BaseListener {
 		return returnSet;
 	}
 
-	public void printHeap(TreeSet<Candidate> minHeap){
-		System.out.println("******************************");
-		System.out.println("PRINTING HEAP");
+	public void logHeap(TreeSet<Candidate> minHeap){
+		
+		LOGGER.info("******************************");
+		LOGGER.info("LOGGING HEAP");
 		for (Candidate candidate : minHeap) {
-			System.out.println(candidate);
+			LOGGER.info(candidate.toString());
 		}
-		System.out.println("******************************");
+		LOGGER.info("******************************");
 
 	}
-	public void printPublicMethodNames(List<String> mMethods){
-		System.out.println("******************************");
-		System.out.println("PRINTING PUBLIC METHOD NAMES");
+	public void logPublicMethodNames(List<String> mMethods){
+		LOGGER.info("******************************");
+		LOGGER.info("LOGGING PUBLIC METHOD NAMES");
 		for (String method : mMethods) {
-			System.out.println(method);
+			LOGGER.info(method);
 		}
-		System.out.println("******************************");
+		LOGGER.info("******************************");
 
 	}
 }
