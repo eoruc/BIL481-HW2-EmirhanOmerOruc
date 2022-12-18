@@ -1,30 +1,66 @@
-Dec 18, 2022 3:54:27 PM SuggestionEngine main
+Dec 18, 2022 4:37:26 PM SuggestionEngine main
 INFO: Info Log
-Dec 18, 2022 3:54:27 PM SuggestionEngine suggest
+Dec 18, 2022 4:37:26 PM SuggestionEngine suggest
 INFO: Building the parse tree...
-Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
+Dec 18, 2022 4:37:27 PM SuggestionEngine suggest
 INFO: Built the parse tree...(took 0 seconds)
-Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
+Dec 18, 2022 4:37:27 PM SuggestionEngine suggest
 INFO: Collecting the public method names...
-Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
+Dec 18, 2022 4:37:27 PM SuggestionEngine suggest
 INFO: Collected the public method names...
-Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
-INFO: [onlyMethod]
-Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
+Dec 18, 2022 4:37:27 PM SuggestionEngine suggest
+INFO: [arraycopy, clearProperty, currentTimeMillis, exit, gc, getenv, getenv, getProperties, getProperty, getProperty, getSecurityManager]
+Dec 18, 2022 4:37:27 PM SuggestionEngine suggest
 INFO: Finding the suggestions...
-Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
 INFO: ******************************
-Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
 INFO: LOGGING PUBLIC METHOD NAMES
-Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
-INFO: onlyMethod
-Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: arraycopy
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: clearProperty
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: currentTimeMillis
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: exit
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: gc
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: getenv
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: getenv
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: getProperties
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: getProperty
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: getProperty
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
+INFO: getSecurityManager
+Dec 18, 2022 4:37:27 PM SuggestionEngine logPublicMethodNames
 INFO: ******************************
-Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
 INFO: ******************************
-Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
 INFO: LOGGING HEAP
-Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
-INFO: onlyMethod: 6.0
-Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: getProperty: 2.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: getProperties: 4.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: clearProperty: 6.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: getenv: 6.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: arraycopy: 8.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: exit: 8.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: gc: 8.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: getSecurityManager: 12.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
+INFO: currentTimeMillis: 15.0
+Dec 18, 2022 4:37:27 PM SuggestionEngine logHeap
 INFO: ******************************
