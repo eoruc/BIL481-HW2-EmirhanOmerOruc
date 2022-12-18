@@ -9,6 +9,6 @@ public class Test1 {
   public Properties	getData() { return null; }
   public String	getFullData(String key) { return ""; }
   public String	getFullData2(String key, String def) { return ""; }
-  public SecurityManager	gtfdat2() { return null; }  
+  public getFullData222	gtfdat2() { return null; }  
   private void datgtfea2() {}
 }

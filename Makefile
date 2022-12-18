@@ -40,6 +40,32 @@ run8: clean
 	mkdir -p logs
 	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine getData 3
 
+run9: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine abbbbbbba 3
+
+run10: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test1.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine getFullData 3
+
+run11: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test2.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine only 1
+
+run12: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test2.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine only 2
+
+
+run13: clean
+	javac *.java
+	mkdir -p logs
+	cat input/Test2.java | java -Djava.util.logging.config.file=logging.properties SuggestionEngine only 999
+
 
 clean:
 	rm -f *.class

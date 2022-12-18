@@ -1,70 +1,30 @@
-Dec 18, 2022 3:50:43 PM SuggestionEngine main
+Dec 18, 2022 3:54:27 PM SuggestionEngine main
 INFO: Info Log
-Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
+Dec 18, 2022 3:54:27 PM SuggestionEngine suggest
 INFO: Building the parse tree...
-Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
+Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
 INFO: Built the parse tree...(took 0 seconds)
-Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
+Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
 INFO: Collecting the public method names...
-Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
+Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
 INFO: Collected the public method names...
-Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
-INFO: [test1, test2, test3, test4, abbbbbbbbbbbbba, aba, abbbba, getData, getFullData, getFullData2, gtfdat2]
-Dec 18, 2022 3:50:43 PM SuggestionEngine suggest
+Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
+INFO: [onlyMethod]
+Dec 18, 2022 3:54:28 PM SuggestionEngine suggest
 INFO: Finding the suggestions...
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
 INFO: ******************************
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
 INFO: LOGGING PUBLIC METHOD NAMES
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: test1
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: test2
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: test3
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: test4
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: abbbbbbbbbbbbba
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: aba
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: abbbba
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: getData
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: getFullData
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: getFullData2
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
-INFO: gtfdat2
-Dec 18, 2022 3:50:43 PM SuggestionEngine logPublicMethodNames
+Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
+INFO: onlyMethod
+Dec 18, 2022 3:54:28 PM SuggestionEngine logPublicMethodNames
 INFO: ******************************
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
 INFO: ******************************
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
 INFO: LOGGING HEAP
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: getData: 0.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: getFullData: 4.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: gtfdat2: 4.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: test1: 5.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: test2: 5.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: test3: 5.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: test4: 5.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: aba: 5.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: getFullData2: 5.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: abbbba: 6.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
-INFO: abbbbbbbbbbbbba: 14.0
-Dec 18, 2022 3:50:43 PM SuggestionEngine logHeap
+Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
+INFO: onlyMethod: 6.0
+Dec 18, 2022 3:54:28 PM SuggestionEngine logHeap
 INFO: ******************************
